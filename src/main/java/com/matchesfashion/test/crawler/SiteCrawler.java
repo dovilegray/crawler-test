@@ -2,7 +2,6 @@ package com.matchesfashion.test.crawler;
 
 import com.matchesfashion.test.crawler.loader.ContentLoader;
 import com.matchesfashion.test.crawler.loader.Response;
-import com.matchesfashion.test.crawler.loader.SiteContentLoader;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -21,7 +20,7 @@ import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
 
 public class SiteCrawler {
-    private final Logger logger = Logger.getLogger(SiteContentLoader.class.getName());
+    private final Logger logger = Logger.getLogger(SiteCrawler.class.getName());
 
     private final ContentLoader siteContentLoader;
     private final int maxDepth;
